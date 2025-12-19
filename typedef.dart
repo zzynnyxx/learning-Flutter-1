@@ -1,10 +1,11 @@
-typedef CompareRunners = int Function (int runnerA,int runnerB );
+//Tpe alias for  Shoppping map
+typedef ShoppingCart = Map < String , List<String>>;
 
-//This Functions matches that "shape"
- int checkSpeed(int a , int b) => a-b;
+void main(){
+  ShoppingCart cart ={
+    'fruits' : ['apple', 'banana'],
+    'vegetables' : ['carrot', 'brocoli'],
+  };
 
- void main (){
-  // we can use our nickname to verify the function
-  CompareRunners raceJudge = checkSpeed;
-  print ("The judge is ready ")
- }
+  print(cart);
+}
