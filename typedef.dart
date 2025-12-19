@@ -1,7 +1,10 @@
-typedef PriceList = List<double>;
+typedef CompareRunners = int Function (int runnerA,int runnerB );
 
-void main(){
-  PriceList monthlyGroceries =[12.99,5.50,43.00];
+//This Functions matches that "shape"
+ int checkSpeed(int a , int b) => a-b;
 
-  print(monthlyGroceries);
-}
+ void main (){
+  // we can use our nickname to verify the function
+  CompareRunners raceJudge = checkSpeed;
+  print ("The judge is ready ")
+ }
