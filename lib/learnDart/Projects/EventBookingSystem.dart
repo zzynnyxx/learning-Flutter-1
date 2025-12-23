@@ -32,18 +32,25 @@ void main(){
   for(var user in users){
     print('\n Processing bookings for ${user.name}');
 
+
     if(user.age < 18){
       print('Too young to book events.');
       continue;
     }
 
     for(var event in events ){
+
       if(event.availableSeats<=0){
         print('${event.name} is full.');
         continue;
       }
+
       print('${user.name} booked ${event.name}');
-      break;//user books only one evnt
+        
+    
+      
+      }
+
+      // break;//user books only one evnt
     }
       }
-}
